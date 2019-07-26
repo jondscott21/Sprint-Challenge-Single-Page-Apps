@@ -26,11 +26,11 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Explain benefit(s) using `client-side routing`?
 > Answer:
-- [ ] What does AJAX stand for?
+- [Asyncronous javascript and XML] What does AJAX stand for?
 > Answer:
-- [ ] What are `controlled components` in React?
+- [a component whose value is controlled by state from React ] What are `controlled components` in React?
 > Answer:
-- [ ] Name three tools/libraries for making AJAX requests.
+- [axios, fetch API, superagent] Name three tools/libraries for making AJAX requests.
 > Answer:
 
 

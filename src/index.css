@@ -38,3 +38,10 @@ header h1 {
   text-align: center;
 
 }
+
+.grey-link {
+  color: grey;
+}
+.grey-link:hover {
+  color: grey;
+}
