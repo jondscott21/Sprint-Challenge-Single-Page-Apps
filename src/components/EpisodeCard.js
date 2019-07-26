@@ -10,7 +10,14 @@ export default function EpisodeCard (props) {
     background: lightgrey;
     width: 35%;
     margin-left: 65%;
-  `
+    position: absolute;
+    bottom: 1px;
+    color: black;
+    
+    &:hover {
+        color: black;
+    }
+  `;
   
   return (
     <Card>

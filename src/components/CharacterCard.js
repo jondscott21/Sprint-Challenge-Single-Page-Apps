@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {Link} from 'react-router-dom'
 import {Card, Icon} from 'semantic-ui-react';
 import styled from 'styled-components'
 
 export default function CharacterCard ({ character }) {
+  console.log(character)
+
   const P = styled.p`
     color: grey;
   `
@@ -15,7 +17,7 @@ export default function CharacterCard ({ character }) {
       <P>{character.species} {character.status}</P>
       <p>Location: {character.location.name}</p>
       <p>Origin: {character.origin.name}</p>
-      <Link to='/episodes' className='grey-link'><Icon name='video'></Icon>Episodes</Link>
+      <Link to={`/episodes/${character.id}/character`} className='grey-link'><Icon name='video'></Icon>Episodes</Link>
     </Card>
     );
   

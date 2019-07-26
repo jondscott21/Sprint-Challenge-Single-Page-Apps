@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios'
 
 export default function SearchForm({ onSearch }) {
   const [query, setQuery] = useState({
@@ -7,6 +8,13 @@ export default function SearchForm({ onSearch }) {
   const handleInputChange = (event) => {
     setQuery({ ...query, name: event.target.value })
   }
+  useEffect(() => {
+    axios.get(`https://rickandmortyapi.com/api/character/?name=${query.name}`)
+    .then(res => {
+      console.log(res.data.results);
+      console.log(query.name)
+    })
+  }, [query.name])
 
   return (
     <section className="search-form">

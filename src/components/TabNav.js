@@ -16,12 +16,14 @@ const welcomeLabel = createLabel("home", "Home Page")
 const characterLabel = createLabel("users", "Characters")
 const locationLabel = createLabel("map", "Locations")
 const episodeLabel = createLabel("video", "Episodes")
+const searchLabel = createLabel("search", "Search")
 
 const panes = [
   { menuItem: <Menu.Item key='home' as={Nav} to={`/`} content={welcomeLabel} /> },
   { menuItem: <Menu.Item key='characters' as={Nav} to={`/characters`} content={characterLabel} /> },
   { menuItem: <Menu.Item key='locations' as={Nav} to={`/locations`} content={locationLabel} /> },
-  { menuItem: <Menu.Item key='episodes' as={Nav} to={`/episodes`} content={episodeLabel} /> }
+  { menuItem: <Menu.Item key='episodes' as={Nav} to={`/episodes`} content={episodeLabel} /> },
+  { menuItem: <Menu.Item key='search' as={Nav} to={`/search`} content={searchLabel} /> }
 ]
 
 const TabNav = () => <Tab panes={panes} renderActiveOnly={false} />
