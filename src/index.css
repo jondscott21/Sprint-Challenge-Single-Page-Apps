@@ -38,3 +38,10 @@ header h1 {
   text-align: center;
 
 }
+
+.character-card {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  border: solid 1px black;
+}
