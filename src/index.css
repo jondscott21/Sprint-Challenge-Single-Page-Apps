@@ -39,9 +39,9 @@ header h1 {
 
 }
 
-.character-card {
-  display: flex;
-  flex-direction: column;
-  width: 45%;
-  border: solid 1px black;
+.grey-link {
+  color: grey;
+}
+.grey-link:hover {
+  color: grey;
 }
